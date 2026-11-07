@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="640" viewBox="0 0 360 640">
+  <defs>
+    <linearGradient id="bg-food" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1106"/>
+      <stop offset="50%" stop-color="#0f0903"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <radialGradient id="amber-glow" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#D4AF37" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="360" height="640" fill="url(#bg-food)"/>
+  <rect width="360" height="640" fill="url(#amber-glow)"/>
+  <!-- Artisan coffee cup & golden steam art -->
+  <g opacity="0.85" transform="translate(180, 280)">
+    <!-- Saucer -->
+    <ellipse cx="0" cy="50" rx="75" ry="18" fill="#1f150d" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.4"/>
+    <!-- Cup body -->
+    <path d="M-45,-15 C-40,40 40,40 45,-15 Z" fill="#140d07" stroke="#ea580c" stroke-width="2"/>
+    <!-- Cup rim with golden crema surface -->
+    <ellipse cx="0" cy="-15" rx="45" ry="14" fill="#78350f" stroke="#D4AF37" stroke-width="1.5"/>
+    <ellipse cx="0" cy="-15" rx="36" ry="10" fill="#b45309"/>
+    <!-- Handle -->
+    <path d="M43,-10 C62,-10 62,25 40,25" fill="none" stroke="#ea580c" stroke-width="4" stroke-linecap="round"/>
+    <!-- Delicate steam curves -->
+    <path d="M-15,-35 C-22,-50 -8,-65 -15,-80" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.7"/>
+    <path d="M12,-35 C18,-52 5,-68 12,-85" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.5"/>
+  </g>
+  <!-- Framing guides -->
+  <rect x="20" y="20" width="320" height="600" rx="16" fill="none" stroke="#f97316" stroke-opacity="0.2" stroke-width="1"/>
+</svg>

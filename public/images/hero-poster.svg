@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <!-- Deep atmospheric background gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050505"/>
+      <stop offset="40%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#070602"/>
+    </linearGradient>
+
+    <!-- Warm golden ambient spotlight top center -->
+    <radialGradient id="gold-spot-top" cx="50%" cy="15%" r="55%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.22"/>
+      <stop offset="45%" stop-color="#D4AF37" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Secondary golden accent bottom right -->
+    <radialGradient id="gold-spot-bottom" cx="80%" cy="85%" r="45%">
+      <stop offset="0%" stop-color="#E8C84B" stop-opacity="0.12"/>
+      <stop offset="50%" stop-color="#B8972E" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Subtle luxury studio grid pattern -->
+    <pattern id="studio-grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.04"/>
+    </pattern>
+
+    <!-- Cinematic beam line -->
+    <linearGradient id="beam-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#E8C84B" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base fill -->
+  <rect width="1920" height="1080" fill="url(#bg-grad)"/>
+
+  <!-- Studio Grid Overlay -->
+  <rect width="1920" height="1080" fill="url(#studio-grid)"/>
+
+  <!-- Golden Lighting Glows -->
+  <rect width="1920" height="1080" fill="url(#gold-spot-top)"/>
+  <rect width="1920" height="1080" fill="url(#gold-spot-bottom)"/>
+
+  <!-- Abstract Cinematic Geometry (High-end Studio Aesthetics) -->
+  <g opacity="0.35">
+    <!-- Glowing circular camera aperture / spotlight rings -->
+    <circle cx="960" cy="480" r="320" fill="none" stroke="#D4AF37" stroke-width="1" stroke-dasharray="8 12" stroke-opacity="0.3"/>
+    <circle cx="960" cy="480" r="460" fill="none" stroke="#D4AF37" stroke-width="0.75" stroke-opacity="0.15"/>
+    <circle cx="960" cy="480" r="620" fill="none" stroke="#D4AF37" stroke-width="0.5" stroke-dasharray="4 16" stroke-opacity="0.1"/>
+
+    <!-- Subtle gold light beams -->
+    <line x1="360" y1="480" x2="1560" y2="480" stroke="url(#beam-grad)" stroke-width="1.5"/>
+    <line x1="960" y1="180" x2="960" y2="780" stroke="url(#beam-grad)" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+
+  <!-- Film Bokeh Particle Accents -->
+  <circle cx="380" cy="280" r="3" fill="#D4AF37" opacity="0.6"/>
+  <circle cx="420" cy="340" r="1.5" fill="#E8C84B" opacity="0.4"/>
+  <circle cx="1480" cy="320" r="3.5" fill="#D4AF37" opacity="0.5"/>
+  <circle cx="1560" cy="420" r="2" fill="#E8C84B" opacity="0.4"/>
+  <circle cx="780" cy="740" r="2.5" fill="#D4AF37" opacity="0.5"/>
+  <circle cx="1180" cy="710" r="2" fill="#D4AF37" opacity="0.4"/>
+  <circle cx="280" cy="620" r="4" fill="#D4AF37" opacity="0.3"/>
+  <circle cx="1680" cy="680" r="3" fill="#E8C84B" opacity="0.35"/>
+</svg>

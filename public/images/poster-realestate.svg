@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="640" viewBox="0 0 360 640">
+  <defs>
+    <linearGradient id="bg-realty" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#19170e"/>
+      <stop offset="50%" stop-color="#0e0d08"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <radialGradient id="realty-gold-glow" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#eab308" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="360" height="640" fill="url(#bg-realty)"/>
+  <rect width="360" height="640" fill="url(#realty-gold-glow)"/>
+  <!-- Luxury Modern Architectural Villa silhouette with warm interior glow -->
+  <g opacity="0.9" transform="translate(180, 275)">
+    <!-- Villa Roof Line & Cantilever -->
+    <polygon points="-80,-20 80,-35 80,-15 -80,0" fill="#D4AF37"/>
+    <!-- Villa Glass Main Pavilion -->
+    <rect x="-70" y="0" width="140" height="80" rx="3" fill="#1f1c11" stroke="#D4AF37" stroke-width="1.5"/>
+    <!-- Panoramic window panes with warm interior lights -->
+    <rect x="-60" y="10" width="35" height="60" rx="2" fill="#eab308" fill-opacity="0.35" stroke="#D4AF37" stroke-width="0.75"/>
+    <rect x="-18" y="10" width="36" height="60" rx="2" fill="#eab308" fill-opacity="0.25" stroke="#D4AF37" stroke-width="0.75"/>
+    <rect x="25" y="10" width="35" height="60" rx="2" fill="#eab308" fill-opacity="0.4" stroke="#D4AF37" stroke-width="0.75"/>
+  </g>
+  <!-- Framing guides -->
+  <rect x="20" y="20" width="320" height="600" rx="16" fill="none" stroke="#D4AF37" stroke-opacity="0.25" stroke-width="1"/>
+</svg>

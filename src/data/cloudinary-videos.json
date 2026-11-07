@@ -1,0 +1,17 @@
+{
+  "hero-showreel.mp4": {
+    "secure_url": "/videos/hero-showreel.mp4",
+    "thumbnail_url": "/images/hero-poster.svg",
+    "public_id": "hero-showreel"
+  },
+  "jacket-assembly-snow-storm.mp4": {
+    "secure_url": "/videos/jacket-assembly-snow-storm.mp4",
+    "thumbnail_url": "/images/poster-clothing.svg",
+    "public_id": "jacket-assembly-snow-storm"
+  },
+  "cinematic-video-ad.mp4": {
+    "secure_url": "/videos/cinematic-video-ad.mp4",
+    "thumbnail_url": "/images/static-product-photo.jpeg",
+    "public_id": "cinematic-video-ad"
+  }
+}

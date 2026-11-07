@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="640" viewBox="0 0 360 640">
+  <defs>
+    <linearGradient id="bg-gym" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a121e"/>
+      <stop offset="50%" stop-color="#060c14"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <radialGradient id="blue-glow" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.28"/>
+      <stop offset="60%" stop-color="#1e3a8a" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="360" height="640" fill="url(#bg-gym)"/>
+  <rect width="360" height="640" fill="url(#blue-glow)"/>
+  <!-- Matte black dumbbell / gym accessories visual -->
+  <g opacity="0.85" transform="translate(180, 275)">
+    <!-- Dumbbell bar -->
+    <rect x="-70" y="-8" width="140" height="16" rx="4" fill="#3b82f6" opacity="0.6"/>
+    <!-- Grip knurling pattern -->
+    <rect x="-30" y="-10" width="60" height="20" rx="3" fill="#1e293b" stroke="#D4AF37" stroke-width="1.5"/>
+    <!-- Outer weights -->
+    <rect x="-85" y="-45" width="20" height="90" rx="6" fill="#111827" stroke="#3b82f6" stroke-width="2"/>
+    <rect x="65" y="-45" width="20" height="90" rx="6" fill="#111827" stroke="#3b82f6" stroke-width="2"/>
+    <rect x="-100" y="-35" width="15" height="70" rx="4" fill="#0f172a"/>
+    <rect x="85" y="-35" width="15" height="70" rx="4" fill="#0f172a"/>
+  </g>
+  <!-- Framing guides -->
+  <rect x="20" y="20" width="320" height="600" rx="16" fill="none" stroke="#3b82f6" stroke-opacity="0.2" stroke-width="1"/>
+</svg>

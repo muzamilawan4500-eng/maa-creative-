@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAA Creative Studio — Scroll-Stopping Product Ad Videos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: { DEFAULT: '#D4AF37', light: '#E8C84B', dark: '#B8972E' },
+            'site-bg': '#0A0A0A',
+            'card-bg': '#111111',
+            'site-border': '#1F1F1F',
+          },
+          fontFamily: {
+            playfair: ['"Playfair Display"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #0A0A0A; color: #FFFFFF; font-family: 'Plus Jakarta Sans', sans-serif; }
+    ::selection { background-color: #D4AF37; color: #0A0A0A; }
+    .gold-glow { box-shadow: 0 0 35px rgba(212, 175, 55, 0.3); }
+    .gold-text-glow { text-shadow: 0 0 25px rgba(212, 175, 55, 0.4); }
+  </style>
+</head>
+<body class="bg-[#0A0A0A] text-white antialiased selection:bg-[#D4AF37] selection:text-black">
+
+  <!-- Sticky Navbar -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#0A0A0A]/95 backdrop-blur-md border-b border-[#1F1F1F]">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2.5 font-playfair text-xl sm:text-2xl font-bold tracking-tight text-white group">
+        <span class="w-2.5 h-2.5 rounded-full bg-[#D4AF37] group-hover:scale-125 transition-transform"></span>
+        <span>MAA <span class="text-[#D4AF37]">Creative Studio</span></span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-neutral-400">
+        <a href="#portfolio" class="hover:text-white transition">Portfolio</a>
+        <a href="#difference" class="hover:text-white transition">The Difference</a>
+        <a href="#services" class="hover:text-white transition">Services</a>
+        <a href="#how-it-works" class="hover:text-white transition">Process</a>
+        <a href="#packages" class="hover:text-white transition">Packages</a>
+        <a href="#faq" class="hover:text-white transition">FAQ</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <a href="#contact" class="hidden sm:inline-flex bg-[#D4AF37] text-black font-bold px-6 py-2.5 rounded-full hover:bg-[#E8C84B] transition shadow-[0_0_20px_rgba(212,175,55,0.35)] text-sm">
+          Get a Free Sample
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="heroSection" class="relative min-h-[92vh] flex items-center justify-center overflow-hidden pt-36 pb-20">
+    <video
+      id="heroVideo"
+      src="videos/hero-showreel.mp4"
+      poster="images/hero-poster.svg"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      class="absolute inset-0 w-full h-full object-cover pointer-events-none will-change-transform"
+    ></video>
+    <div class="absolute inset-0 bg-cover bg-center opacity-40" style="background-image: url('images/hero-poster.svg');"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/90 via-[#0A0A0A]/75 to-[#0A0A0A]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-[#0A0A0A]/60 to-[#0A0A0A]"></div>
+
+    <div class="relative z-10 text-center max-w-5xl mx-auto px-6">
+      <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-[#D4AF37]/30 bg-[#111111]/80 backdrop-blur-md mb-8">
+        <span class="w-2 h-2 rounded-full bg-[#D4AF37] animate-pulse"></span>
+        <span class="text-[#D4AF37] text-xs font-semibold uppercase tracking-[0.2em]">
+          MAA Creative Studio · Direct-Response Video Ads
+        </span>
+      </div>
+
+      <h1 class="font-playfair text-4xl sm:text-6xl md:text-7xl font-bold text-white tracking-tight leading-[1.15] mb-6">
+        We Create <span class="inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#E8C84B] via-[#D4AF37] to-[#B8972E] italic pr-3 sm:pr-4 pb-1 tracking-normal">Scroll-Stopping Ads</span><br class="hidden sm:inline"> for Your Brand
+      </h1>
+
+      <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-sm sm:text-xl font-medium tracking-wide text-[#D4AF37] mb-6">
+        <span>More Views</span>
+        <span class="text-[#6B7280]">•</span>
+        <span>More Engagement</span>
+        <span class="text-[#6B7280]">•</span>
+        <span>More Sales</span>
+      </div>
+
+      <p class="text-base sm:text-lg text-neutral-300 max-w-2xl mx-auto mb-10 leading-relaxed font-normal">
+        High-impact ad videos built for Clothing, Gym Accessories, Shopify &amp; E-commerce, Restaurants, Perfume, and Real Estate. We engineer videos that turn scrollers into buyers.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+        <a href="#contact" class="w-full sm:w-auto bg-[#D4AF37] text-black font-bold px-8 py-4 rounded-full hover:bg-[#E8C84B] hover:shadow-[0_0_35px_rgba(212,175,55,0.45)] transition-all duration-300 text-base">
+          Get a Free Sample Ad
+        </a>
+        <a href="#portfolio" class="w-full sm:w-auto border border-neutral-700 bg-neutral-950/60 backdrop-blur-sm text-white font-medium px-8 py-4 rounded-full hover:border-[#D4AF37] hover:text-[#D4AF37] transition-all duration-300 text-base">
+          See Our Work ↓
+        </a>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-xs sm:text-sm text-neutral-400 border-t border-neutral-900 pt-8">
+        <div class="flex items-center gap-2"><span class="text-[#D4AF37]">★</span> 100% Focused on Client ROI</div>
+        <div class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> 48-Hour Rush Available</div>
+        <div class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Ready for TikTok, Reels &amp; Paid Ads</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Strip & Stat Counters -->
+  <!-- Platforms & Standards Strip -->
+  <section class="py-16 sm:py-20 border-y border-[#1F1F1F] bg-[#0c0c0c] relative">
+    <div class="max-w-7xl mx-auto px-6">
+      <p class="text-center text-[#D4AF37] text-xs uppercase tracking-[0.25em] font-semibold mb-3">
+        Multi-Platform Precision
+      </p>
+      <h2 class="text-center text-white font-playfair text-xl sm:text-2xl font-bold mb-10">
+        Engineered for High-Performance Advertising Channels
+      </h2>
+      <div class="flex flex-wrap justify-center items-center gap-3 sm:gap-4 mb-16">
+        <div class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#141414] border border-[#262626] shadow-sm">
+          <span>🎵</span><span class="text-white text-xs sm:text-sm font-semibold">TikTok Ads</span><span class="text-[10px] uppercase font-bold text-[#D4AF37] bg-[#D4AF37]/10 px-2 py-0.5 rounded-full border border-[#D4AF37]/20">9:16 Vertical</span>
+        </div>
+        <div class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#141414] border border-[#262626] shadow-sm">
+          <span>📸</span><span class="text-white text-xs sm:text-sm font-semibold">Instagram Reels</span><span class="text-[10px] uppercase font-bold text-[#D4AF37] bg-[#D4AF37]/10 px-2 py-0.5 rounded-full border border-[#D4AF37]/20">High Engagement</span>
+        </div>
+        <div class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#141414] border border-[#262626] shadow-sm">
+          <span>⚡</span><span class="text-white text-xs sm:text-sm font-semibold">Meta / Facebook Ads</span><span class="text-[10px] uppercase font-bold text-[#D4AF37] bg-[#D4AF37]/10 px-2 py-0.5 rounded-full border border-[#D4AF37]/20">Direct-Response</span>
+        </div>
+        <div class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#141414] border border-[#262626] shadow-sm">
+          <span>▶</span><span class="text-white text-xs sm:text-sm font-semibold">YouTube Shorts</span><span class="text-[10px] uppercase font-bold text-[#D4AF37] bg-[#D4AF37]/10 px-2 py-0.5 rounded-full border border-[#D4AF37]/20">Retention-First</span>
+        </div>
+        <div class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#141414] border border-[#262626] shadow-sm">
+          <span>🛍</span><span class="text-white text-xs sm:text-sm font-semibold">Shopify Product Ads</span><span class="text-[10px] uppercase font-bold text-[#D4AF37] bg-[#D4AF37]/10 px-2 py-0.5 rounded-full border border-[#D4AF37]/20">Conversion Boost</span>
+        </div>
+        <div class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#141414] border border-[#262626] shadow-sm">
+          <span>📦</span><span class="text-white text-xs sm:text-sm font-semibold">Amazon Video Ads</span><span class="text-[10px] uppercase font-bold text-[#D4AF37] bg-[#D4AF37]/10 px-2 py-0.5 rounded-full border border-[#D4AF37]/20">Product Focus</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="bg-[#111111]/80 border border-[#1F1F1F] rounded-2xl p-6 text-center hover:border-[#D4AF37]/40 transition">
+          <div class="text-3xl sm:text-4xl font-bold font-playfair text-[#D4AF37]">4K UHD</div>
+          <div class="text-white text-sm sm:text-base font-semibold mt-1">Studio-Grade Visuals</div>
+          <p class="text-neutral-500 text-xs mt-1">Color-graded for maximum mobile pop</p>
+        </div>
+        <div class="bg-[#111111]/80 border border-[#1F1F1F] rounded-2xl p-6 text-center hover:border-[#D4AF37]/40 transition">
+          <div class="text-3xl sm:text-4xl font-bold font-playfair text-[#D4AF37]">48 Hours</div>
+          <div class="text-white text-sm sm:text-base font-semibold mt-1">Rapid Turnaround</div>
+          <p class="text-neutral-500 text-xs mt-1">Launch-ready files straight to your drive</p>
+        </div>
+        <div class="bg-[#111111]/80 border border-[#1F1F1F] rounded-2xl p-6 text-center hover:border-[#D4AF37]/40 transition">
+          <div class="text-3xl sm:text-4xl font-bold font-playfair text-[#D4AF37]">100%</div>
+          <div class="text-white text-sm sm:text-base font-semibold mt-1">Satisfaction Promise</div>
+          <p class="text-neutral-500 text-xs mt-1">Dedicated revisions until approved</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before / After Transformation -->
+  <section id="difference" class="py-24 bg-[#0A0A0A]">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <p class="text-[#D4AF37] text-xs font-semibold uppercase tracking-[0.25em] mb-3">Real Impact &amp; Creative Transformation</p>
+        <h2 class="font-playfair text-3xl sm:text-5xl font-bold text-white tracking-tight">The MAA Difference</h2>
+        <p class="text-neutral-400 mt-4 max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
+          See how we transform flat, lifeless product photos into dynamic, high-converting video ads engineered for social feeds.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
+        <div class="rounded-2xl overflow-hidden border border-[#222222] bg-[#111111] flex flex-col justify-between">
+          <div class="relative overflow-hidden bg-[#0e0e0e] h-[420px] sm:h-[480px] md:h-[520px] flex items-center justify-center p-6 group">
+            <img src="images/static-product-photo.jpeg" alt="Before: Flat static product photo" class="relative z-10 max-h-full max-w-full object-contain rounded-xl shadow-lg border border-neutral-800/80 transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute top-4 left-4 z-10">
+              <span class="bg-neutral-800 text-neutral-300 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider border border-neutral-700 shadow-sm">Before</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-playfair text-xl font-bold text-neutral-300 mb-2">Static Product Photo</h3>
+            <p class="text-neutral-500 text-xs sm:text-sm mb-4 leading-relaxed">Raw photo on a white background. Easily ignored while scrolling feeds, leading to high ad spend with minimal return.</p>
+            <ul class="space-y-2 text-xs sm:text-sm text-neutral-400 border-t border-neutral-800 pt-4">
+              <li class="flex items-center gap-2 text-red-400/80"><span>✕</span> 0.3% Average click-through rate</li>
+              <li class="flex items-center gap-2 text-red-400/80"><span>✕</span> Fails to trigger impulse purchases</li>
+              <li class="flex items-center gap-2 text-red-400/80"><span>✕</span> Wastes budget on cold audiences</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rounded-2xl overflow-hidden border-2 border-[#D4AF37]/50 bg-gradient-to-b from-[#161204] to-[#0f0e08] flex flex-col justify-between shadow-[0_0_35px_rgba(212,175,55,0.12)]">
+          <div class="relative overflow-hidden bg-[#050505] h-[420px] sm:h-[480px] md:h-[520px] flex items-center justify-center p-3 sm:p-4 group">
+            <video
+              src="videos/cinematic-video-ad.mp4"
+              aria-hidden="true"
+              muted
+              loop
+              autoplay
+              playsinline
+              class="absolute inset-0 w-full h-full object-cover blur-2xl opacity-30 scale-110 pointer-events-none"
+            ></video>
+            <div class="absolute inset-0 bg-black/40 pointer-events-none"></div>
+
+            <div class="relative z-10 h-full max-h-full aspect-[9/16] rounded-2xl overflow-hidden border-2 border-[#D4AF37]/60 shadow-[0_0_35px_rgba(0,0,0,0.9),0_0_15px_rgba(212,175,55,0.25)] bg-black cursor-pointer">
+              <video
+                id="beforeAfterVideo"
+                src="videos/cinematic-video-ad.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+                class="w-full h-full object-cover"
+              ></video>
+              <button
+                type="button"
+                id="beforeAfterMuteBtn"
+                class="absolute bottom-3 right-3 z-20 px-3 py-1.5 rounded-full bg-black/80 backdrop-blur-md border border-[#D4AF37]/60 text-[#D4AF37] flex items-center gap-1.5 text-xs font-semibold hover:bg-[#D4AF37] hover:text-black transition-all shadow-lg"
+              >
+                🔊 <span>Tap for Sound</span>
+              </button>
+            </div>
+
+            <div class="absolute top-4 left-4 z-20">
+              <span class="bg-[#D4AF37] text-black text-xs font-extrabold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm">After (MAA Creative Studio)</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-playfair text-xl font-bold text-white mb-2 flex items-center justify-between">
+              <span>Cinematic 9:16 Video Ad</span>
+              <span class="text-[#D4AF37] text-xs font-sans uppercase font-bold tracking-wider">Ready to Post</span>
+            </h3>
+            <p class="text-neutral-300 text-xs sm:text-sm mb-4 leading-relaxed">Crafted with an irresistible first-2-second hook, motion rhythm, licensed audio, and clear call-to-action.</p>
+            <ul class="space-y-2 text-xs sm:text-sm text-neutral-200 border-t border-[#D4AF37]/20 pt-4">
+              <li class="flex items-center gap-2 text-[#D4AF37]"><span>✓</span> 3.2× Average lift in engagement &amp; CTR</li>
+              <li class="flex items-center gap-2 text-[#D4AF37]"><span>✓</span> Formatted natively for Instagram Reels &amp; TikTok</li>
+              <li class="flex items-center gap-2 text-[#D4AF37]"><span>✓</span> Decreases Customer Acquisition Cost (CAC)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-24 bg-[#0d0d0d] border-t border-[#1F1F1F]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <p class="text-[#D4AF37] text-xs font-semibold uppercase tracking-[0.25em] mb-3">Portfolio</p>
+        <h2 class="font-playfair text-3xl sm:text-5xl font-bold text-white tracking-tight">Our Work</h2>
+        <p class="text-neutral-400 mt-4 max-w-xl mx-auto text-sm sm:text-base">Commercial video concepts and ad showcases engineered to stop the scroll and drive action.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <!-- Project 1 (Clothing - Live Video) -->
+        <div class="relative group cursor-pointer rounded-2xl overflow-hidden bg-[#0d0d0d] border border-[#222222] hover:border-[#D4AF37] transition-all duration-300 hover:shadow-[0_0_28px_rgba(212,175,55,0.22)]" style="aspect-ratio: 9/16;">
+          <video src="videos/jacket-assembly-snow-storm.mp4" poster="images/poster-clothing.svg" autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></video>
+          <div class="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-black via-black/85 to-transparent pointer-events-none"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-5 z-10">
+            <span class="text-[11px] px-2.5 py-1 rounded-full font-semibold mb-2 inline-block border backdrop-blur-sm bg-purple-950/80 text-purple-300 border-purple-800/50">Clothing</span>
+            <h3 class="text-white text-lg font-bold font-playfair tracking-wide leading-snug">Streetwear &amp; Outerwear</h3>
+            <p class="text-[#D4AF37] text-xs sm:text-sm font-semibold mt-1">🎬 Snow Storm Assembly Hook</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="relative group cursor-pointer rounded-2xl overflow-hidden bg-[#0d0d0d] border border-[#222222] hover:border-[#D4AF37] transition-all duration-300 hover:shadow-[0_0_28px_rgba(212,175,55,0.22)]" style="aspect-ratio: 9/16;">
+          <img src="images/poster-gym.svg" alt="Gym & Athletic Gear" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-14 h-14 rounded-full bg-black/70 backdrop-blur-sm border border-[#D4AF37] flex items-center justify-center group-hover:scale-110 transition">
+              <svg class="w-5 h-5 text-[#D4AF37] ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-black via-black/85 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-5 z-10">
+            <span class="text-[11px] px-2.5 py-1 rounded-full font-semibold mb-2 inline-block border backdrop-blur-sm bg-blue-950/80 text-blue-300 border-blue-800/50">Gym Accessories</span>
+            <h3 class="text-white text-lg font-bold font-playfair tracking-wide leading-snug">Gym &amp; Athletic Gear</h3>
+            <p class="text-[#D4AF37] text-xs sm:text-sm font-semibold mt-1">🎬 High-Energy Pacing &amp; Beats</p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="relative group cursor-pointer rounded-2xl overflow-hidden bg-[#0d0d0d] border border-[#222222] hover:border-[#D4AF37] transition-all duration-300 hover:shadow-[0_0_28px_rgba(212,175,55,0.22)]" style="aspect-ratio: 9/16;">
+          <img src="images/poster-perfume.svg" alt="Luxury Fragrance & Beauty" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-14 h-14 rounded-full bg-black/70 backdrop-blur-sm border border-[#D4AF37] flex items-center justify-center group-hover:scale-110 transition">
+              <svg class="w-5 h-5 text-[#D4AF37] ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-black via-black/85 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-5 z-10">
+            <span class="text-[11px] px-2.5 py-1 rounded-full font-semibold mb-2 inline-block border backdrop-blur-sm bg-pink-950/80 text-pink-300 border-pink-800/50">Perfume</span>
+            <h3 class="text-white text-lg font-bold font-playfair tracking-wide leading-snug">Luxury Fragrance &amp; Beauty</h3>
+            <p class="text-[#D4AF37] text-xs sm:text-sm font-semibold mt-1">🎬 Sensory Luxury Aesthetic</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-24 bg-[#0A0A0A]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <p class="text-[#D4AF37] text-xs font-semibold uppercase tracking-[0.25em] mb-3">Capabilities</p>
+        <h2 class="font-playfair text-3xl sm:text-5xl font-bold text-white tracking-tight">Engineered For Conversions</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="p-8 bg-[#111111] rounded-2xl border-t-2 border-[#D4AF37] border-neutral-900 hover:border-[#D4AF37] transition">
+          <div class="text-3xl mb-4">🎬</div>
+          <h3 class="font-playfair text-xl font-bold text-white mb-2">Product Ad Videos</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed">Scroll-stopping short-form ads crafted to sell. Perfect for Instagram, TikTok, Facebook, and paid campaigns.</p>
+        </div>
+        <div class="p-8 bg-[#111111] rounded-2xl border-t-2 border-[#D4AF37] border-neutral-900 hover:border-[#D4AF37] transition">
+          <div class="text-3xl mb-4">📱</div>
+          <h3 class="font-playfair text-xl font-bold text-white mb-2">Social Media Reels</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed">Vertical reels optimised for the Explore page — high energy, fast cuts, built to capture attention immediately.</p>
+        </div>
+        <div class="p-8 bg-[#111111] rounded-2xl border-t-2 border-[#D4AF37] border-neutral-900 hover:border-[#D4AF37] transition">
+          <div class="text-3xl mb-4">💎</div>
+          <h3 class="font-playfair text-xl font-bold text-white mb-2">Brand Promo Videos</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed">Cinematic brand stories that build instant credibility, communicate values, and convert skeptical buyers.</p>
+        </div>
+        <div class="p-8 bg-[#111111] rounded-2xl border-t-2 border-[#D4AF37] border-neutral-900 hover:border-[#D4AF37] transition">
+          <div class="text-3xl mb-4">🛍️</div>
+          <h3 class="font-playfair text-xl font-bold text-white mb-2">Catalogue &amp; Showcase Videos</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed">Clean, elegant multi-product showcases for Shopify product pages, landing pages, and pitch decks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="py-24 bg-[#0d0d0d] border-y border-[#1F1F1F]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <p class="text-[#D4AF37] text-xs font-semibold uppercase tracking-[0.25em] mb-3">Our Simple Flow</p>
+        <h2 class="font-playfair text-3xl sm:text-5xl font-bold text-white tracking-tight">How It Works</h2>
+        <p class="text-neutral-400 mt-3 text-sm">From raw product picture to ready-to-run campaign in 4 steps.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div class="text-center bg-[#111111]/60 p-6 rounded-2xl border border-neutral-900">
+          <div class="w-14 h-14 rounded-full border-2 border-[#D4AF37] text-[#D4AF37] font-playfair font-bold text-lg flex items-center justify-center mx-auto mb-5 bg-[#0A0A0A]">01</div>
+          <h3 class="font-bold text-lg mb-2">Send Your Product</h3>
+          <p class="text-neutral-400 text-sm">Send your raw product photos or existing footage + brief.</p>
+        </div>
+        <div class="text-center bg-[#111111]/60 p-6 rounded-2xl border border-neutral-900">
+          <div class="w-14 h-14 rounded-full border-2 border-[#D4AF37] text-[#D4AF37] font-playfair font-bold text-lg flex items-center justify-center mx-auto mb-5 bg-[#0A0A0A]">02</div>
+          <h3 class="font-bold text-lg mb-2">We Create Concepts</h3>
+          <p class="text-neutral-400 text-sm">We craft hooks, sound design, pacing, and visual effects.</p>
+        </div>
+        <div class="text-center bg-[#111111]/60 p-6 rounded-2xl border border-neutral-900">
+          <div class="w-14 h-14 rounded-full border-2 border-[#D4AF37] text-[#D4AF37] font-playfair font-bold text-lg flex items-center justify-center mx-auto mb-5 bg-[#0A0A0A]">03</div>
+          <h3 class="font-bold text-lg mb-2">You Approve</h3>
+          <p class="text-neutral-400 text-sm">Review draft, give feedback, and we fine-tune until you love it.</p>
+        </div>
+        <div class="text-center bg-[#111111]/60 p-6 rounded-2xl border border-neutral-900">
+          <div class="w-14 h-14 rounded-full border-2 border-[#D4AF37] text-[#D4AF37] font-playfair font-bold text-lg flex items-center justify-center mx-auto mb-5 bg-[#0A0A0A]">04</div>
+          <h3 class="font-bold text-lg mb-2">Ready Ads Delivered</h3>
+          <p class="text-neutral-400 text-sm">Receive ready-to-post MP4 videos formatted for TikTok, Reels &amp; Ads.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Packages -->
+  <section id="packages" class="py-24 bg-[#0A0A0A]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <p className="text-[#D4AF37] text-xs font-semibold uppercase tracking-[0.25em] mb-3">Transparent Rates</p>
+        <h2 class="font-playfair text-3xl sm:text-5xl font-bold text-white tracking-tight">Simple, Accessible Packages</h2>
+        <p class="text-neutral-400 mt-4 text-sm sm:text-base max-w-2xl mx-auto">
+          No bloated agency retainers. Start with a single ad to test our creative execution, or choose a multi-ad pack to launch your campaign.
+        </p>
+      </div>
+
+      <!-- Risk-Free Sample Banner -->
+      <div class="max-w-3xl mx-auto mb-14 p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-[#1c1705] via-[#121212] to-[#1c1705] border border-[#D4AF37]/30 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left shadow-[0_0_25px_rgba(212,175,55,0.08)]">
+        <div class="flex items-center gap-3.5">
+          <span class="w-10 h-10 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37]/40 flex items-center justify-center text-xl shrink-0">
+            🎁
+          </span>
+          <div>
+            <p class="text-white text-sm font-bold">Want to test our editing style first?</p>
+            <p class="text-[#D4AF37] text-xs mt-0.5">We will create a free 10-second sample hook for your product before you pay.</p>
+          </div>
+        </div>
+        <a href="https://wa.me/923017089301?text=Hi%20MAA%20Creative,%20I'd%20like%20a%20free%20sample%20hook%20preview" target="_blank" class="shrink-0 bg-[#D4AF37] text-black text-xs font-bold px-5 py-2.5 rounded-full hover:bg-[#E8C84B] transition-all shadow-sm">
+          Claim Free Sample →
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
+        <!-- Starter Test Ad -->
+        <div class="bg-[#111] rounded-2xl p-8 border border-[#1F1F1F] flex flex-col justify-between hover:border-[#D4AF37]/50 transition">
+          <div>
+            <h3 class="font-playfair text-2xl font-bold text-white mb-2">Single Test Ad</h3>
+            <div class="flex items-baseline gap-2 mb-6">
+              <span class="text-4xl font-bold font-playfair text-white">$39</span>
+              <span class="text-neutral-400 text-sm">single ad</span>
+            </div>
+            <ul class="space-y-3 text-sm text-neutral-300 mb-8">
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> 1 High-converting video ad (up to 30s)</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> 9:16 vertical format (TikTok &amp; Reels)</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Irresistible 3-second hook design</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Dynamic motion text &amp; sound effects</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> 2 revision rounds included</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Standard 48h turnaround</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/923017089301?text=Hi!%20I'm%20interested%20in%20the%20Single%20Test%20Ad%20package." target="_blank" class="w-full py-3 rounded-full border border-[#D4AF37] text-[#D4AF37] font-semibold text-center hover:bg-[#D4AF37] hover:text-black transition">Test with 1 Ad</a>
+        </div>
+
+        <!-- Growth (Featured) -->
+        <div class="bg-gradient-to-b from-[#1b1604] to-[#111] rounded-2xl p-8 border-2 border-[#D4AF37] flex flex-col justify-between relative shadow-[0_0_35px_rgba(212,175,55,0.2)]">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#D4AF37] text-black font-bold text-xs uppercase px-4 py-1 rounded-full tracking-wider">
+            Most Popular
+          </div>
+          <div>
+            <h3 class="font-playfair text-2xl font-bold text-white mb-2">Growth Pack</h3>
+            <div class="flex items-baseline gap-2 mb-6">
+              <span class="text-4xl font-bold font-playfair text-[#D4AF37]">$99</span>
+              <span class="text-neutral-400 text-sm">3 video ads (save 15%)</span>
+            </div>
+            <ul class="space-y-3 text-sm text-neutral-200 mb-8">
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> 3 Scroll-stopping video ads (up to 45s)</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> 3 unique hook variations (A/B testing)</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> 9:16 vertical + 1:1 square formats</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Cinematic color grading &amp; audio</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Unlimited revisions until satisfied</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Priority 48h delivery queue</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/923017089301?text=Hi!%20I'm%20interested%20in%20the%20Growth%20Pack%20package." target="_blank" class="w-full py-3.5 rounded-full bg-[#D4AF37] text-black font-bold text-center hover:bg-[#E8C84B] transition shadow-[0_0_20px_rgba(212,175,55,0.4)]">Get 3 Video Ads</a>
+        </div>
+
+        <!-- Scale Campaign -->
+        <div class="bg-[#111] rounded-2xl p-8 border border-[#1F1F1F] flex flex-col justify-between hover:border-[#D4AF37]/50 transition">
+          <div>
+            <h3 class="font-playfair text-2xl font-bold text-white mb-2">Scale Campaign</h3>
+            <div class="flex items-baseline gap-2 mb-6">
+              <span class="text-4xl font-bold font-playfair text-white">$199</span>
+              <span class="text-neutral-400 text-sm">7 video ads batch</span>
+            </div>
+            <ul class="space-y-3 text-sm text-neutral-300 mb-8">
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> 7 High-impact video ads</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Multi-platform sizing (TikTok, Reels)</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Creative concept brainstorming</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Ultra HD 4K master export files</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Unlimited revisions included</li>
+              <li class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Fast priority delivery</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/923017089301?text=Hi!%20I'm%20interested%20in%20the%20Scale%20Campaign%20package." target="_blank" class="w-full py-3 rounded-full border border-[#D4AF37] text-[#D4AF37] font-semibold text-center hover:bg-[#D4AF37] hover:text-black transition">Order Batch Pack</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality Guarantee Section -->
+  <section class="py-24 bg-[#0A0A0A] border-t border-[#1F1F1F] relative">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <p class="text-[#D4AF37] text-xs font-semibold uppercase tracking-[0.25em] mb-3">Our Quality Guarantee</p>
+        <h2 class="font-playfair text-3xl sm:text-5xl font-bold text-white tracking-tight">Why Brands Partner with MAA Creative Studio</h2>
+        <p class="text-neutral-400 mt-4 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+          No stock templates, no false promises, and no guesswork. We combine direct-response psychology with cinematic editing to make your product impossible to ignore.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+        <div class="p-8 rounded-2xl bg-[#111111] border border-[#222222] hover:border-[#D4AF37]/50 transition duration-300">
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-12 h-12 rounded-xl bg-[#1A1A1A] border border-[#2E2E2E] flex items-center justify-center text-2xl">🎯</span>
+            <span class="text-[11px] font-semibold uppercase tracking-wider text-[#D4AF37] bg-[#D4AF37]/10 px-3 py-1 rounded-full border border-[#D4AF37]/20">Retention First</span>
+          </div>
+          <h3 class="font-playfair text-xl font-bold text-white mb-2">The 3-Second Hook Rule</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed">Over 85% of social users scroll past ordinary posts in seconds. We engineer aggressive, high-energy opening hooks designed specifically to stop thumbs and hold attention.</p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-[#111111] border border-[#222222] hover:border-[#D4AF37]/50 transition duration-300">
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-12 h-12 rounded-xl bg-[#1A1A1A] border border-[#2E2E2E] flex items-center justify-center text-2xl">🎧</span>
+            <span class="text-[11px] font-semibold uppercase tracking-wider text-[#D4AF37] bg-[#D4AF37]/10 px-3 py-1 rounded-full border border-[#D4AF37]/20">Commercial Quality</span>
+          </div>
+          <h3 class="font-playfair text-xl font-bold text-white mb-2">Cinematic Sound &amp; Motion</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed">High-converting ads are 50% sound. We layer professional Foley, impact risers, licensed music, and dynamic motion graphics that elevate your product to luxury commercial grade.</p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-[#111111] border border-[#222222] hover:border-[#D4AF37]/50 transition duration-300">
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-12 h-12 rounded-xl bg-[#1A1A1A] border border-[#2E2E2E] flex items-center justify-center text-2xl">🎁</span>
+            <span class="text-[11px] font-semibold uppercase tracking-wider text-[#D4AF37] bg-[#D4AF37]/10 px-3 py-1 rounded-full border border-[#D4AF37]/20">Zero Risk</span>
+          </div>
+          <h3 class="font-playfair text-xl font-bold text-white mb-2">Risk-Free Sample Hook</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed">We believe in proving our creative quality before you commit. Send us your product footage or photos and we will craft a free 10-second sample hook for you to review first.</p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-[#111111] border border-[#222222] hover:border-[#D4AF37]/50 transition duration-300">
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-12 h-12 rounded-xl bg-[#1A1A1A] border border-[#2E2E2E] flex items-center justify-center text-2xl">⚡</span>
+            <span class="text-[11px] font-semibold uppercase tracking-wider text-[#D4AF37] bg-[#D4AF37]/10 px-3 py-1 rounded-full border border-[#D4AF37]/20">Speed &amp; Revisions</span>
+          </div>
+          <h3 class="font-playfair text-xl font-bold text-white mb-2">48-Hour Fast Turnaround</h3>
+          <p class="text-neutral-400 text-sm leading-relaxed">Social trends move quickly. We deliver launch-ready 4K and 9:16 vertical exports within 48 hours, with revision rounds included until you are 100% proud of the final cut.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA & Contact Form -->
+  <section id="contact" class="py-24 bg-[#0d0d0d] border-t border-[#1F1F1F]">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="p-8 md:p-14 rounded-3xl bg-gradient-to-b from-[#1b1502] to-[#0f0f0f] border border-[#D4AF37]/40 mb-16 text-center">
+        <h2 class="font-playfair text-3xl sm:text-5xl font-bold text-white mb-4 leading-tight">
+          Send us one product photo —<br>
+          <span class="text-[#D4AF37]">we'll make a free sample ad</span> for your brand
+        </h2>
+        <p class="text-neutral-400 text-base sm:text-lg mb-8">No commitment. No cost. Just real results.</p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="https://wa.me/923017089301?text=Hi%20MAA%20Creative%20Agency,%20I'd%20like%20a%20free%20sample%20ad%20for%20my%20brand" target="_blank" class="bg-[#25D366] text-white font-bold px-8 py-3.5 rounded-full hover:opacity-90 transition flex items-center gap-2 shadow-lg">
+            <span>💬</span> Send via WhatsApp
+          </a>
+          <a href="mailto:maapakaging@gmail.com?subject=Free%20Sample%20Ad%20Request%20-%20MAA%20Creative" class="border border-[#D4AF37] text-[#D4AF37] font-bold px-8 py-3.5 rounded-full hover:bg-[#D4AF37] hover:text-black transition">
+            Email Us
+          </a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <span class="text-[#D4AF37] text-xs font-semibold uppercase tracking-widest">Get In Touch</span>
+          <h2 class="font-playfair text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">
+            Let's Build Your Brand's Next Viral Ad
+          </h2>
+          <p class="text-neutral-400 leading-relaxed mb-6 text-sm sm:text-base">
+            Tell us about your brand, product category, and target audience. We'll reply within 24 hours with an actionable proposal.
+          </p>
+          <div class="space-y-3 text-sm text-neutral-300">
+            <p class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Free sample ad included upfront</p>
+            <p class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Dedicated creative director per project</p>
+            <p class="flex items-center gap-2"><span class="text-[#D4AF37]">✓</span> Full commercial rights on all videos</p>
+          </div>
+        </div>
+        <form class="bg-[#111111] p-8 rounded-2xl border border-[#1F1F1F] space-y-4" onsubmit="event.preventDefault(); alert('Inquiry received! We will reach out within 24 hours.');">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input type="text" placeholder="Your Name" required class="w-full bg-[#0A0A0A] border border-[#1F1F1F] rounded-lg px-4 py-3 text-white placeholder-neutral-500 focus:outline-none focus:border-[#D4AF37]">
+            <input type="text" placeholder="Brand Name" required class="w-full bg-[#0A0A0A] border border-[#1F1F1F] rounded-lg px-4 py-3 text-white placeholder-neutral-500 focus:outline-none focus:border-[#D4AF37]">
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input type="email" placeholder="Email Address" required class="w-full bg-[#0A0A0A] border border-[#1F1F1F] rounded-lg px-4 py-3 text-white placeholder-neutral-500 focus:outline-none focus:border-[#D4AF37]">
+            <input type="tel" placeholder="WhatsApp Number" required class="w-full bg-[#0A0A0A] border border-[#1F1F1F] rounded-lg px-4 py-3 text-white placeholder-neutral-500 focus:outline-none focus:border-[#D4AF37]">
+          </div>
+          <select required class="w-full bg-[#0A0A0A] border border-[#1F1F1F] rounded-lg px-4 py-3 text-neutral-300 focus:outline-none focus:border-[#D4AF37]">
+            <option value="" disabled selected>Select Product Category</option>
+            <option>Clothing &amp; Fashion</option>
+            <option>Gym Accessories &amp; Fitness</option>
+            <option>Shopify / E-commerce Store</option>
+            <option>Restaurant &amp; Cafe</option>
+            <option>Perfume &amp; Fragrance</option>
+            <option>Salon &amp; Beauty</option>
+            <option>Real Estate</option>
+            <option>Other</option>
+          </select>
+          <textarea rows="4" placeholder="Tell us about your product or share links..." required class="w-full bg-[#0A0A0A] border border-[#1F1F1F] rounded-lg px-4 py-3 text-white placeholder-neutral-500 focus:outline-none focus:border-[#D4AF37]"></textarea>
+          <button type="submit" class="w-full py-4 bg-[#D4AF37] text-black font-bold rounded-full hover:bg-[#E8C84B] transition shadow-[0_0_25px_rgba(212,175,55,0.3)]">
+            Send Inquiry &amp; Request Sample
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#070707] border-t border-[#1F1F1F] py-14">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+        <div>
+          <span class="font-playfair text-xl font-bold text-white">MAA <span class="text-[#D4AF37]">Creative Studio</span></span>
+          <p class="text-neutral-400 text-sm mt-2">More Views. More Engagement. More Sales.</p>
+        </div>
+        <div>
+          <span class="text-neutral-500 text-xs uppercase tracking-wider block mb-1">Direct Contact</span>
+          <a href="mailto:maapakaging@gmail.com" class="text-neutral-300 hover:text-[#D4AF37] text-sm block">✉ maapakaging@gmail.com</a>
+        </div>
+        <div>
+          <span class="text-neutral-500 text-xs uppercase tracking-wider block mb-2">Connect With Us</span>
+          <div class="flex gap-4">
+            <a href="https://www.instagram.com/social.creator1?mdxt=azRuNDV3bWR0d2xs" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-[#D4AF37] text-sm font-semibold">Instagram ↗</a>
+            <a href="https://www.facebook.com/share/1DtNEyi2oM/" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-[#D4AF37] text-sm font-semibold">Facebook ↗</a>
+            <a href="https://www.linkedin.com/in/muzamil-awan-28a413445" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-[#D4AF37] text-sm font-semibold">LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-neutral-900 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
+        <div>© 2026 MAA Creative Studio. All rights reserved.</div>
+        <div>Designed for brands that demand attention.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/923017089301?text=Hi%20MAA%20Creative%20Studio,%20I'm%20interested%20in%20your%20video%20ads" target="_blank" aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center text-white text-2xl shadow-[0_0_25px_rgba(37,211,102,0.5)] hover:scale-110 transition">
+    💬
+  </a>
+
+  <script>
+    (function() {
+      const video = document.getElementById('heroVideo');
+      const section = document.getElementById('heroSection');
+      if (!video) return;
+
+      video.muted = true;
+      video.loop = true;
+      video.playsInline = true;
+
+      const play = () => { video.play().catch(() => {}); };
+      play();
+
+      video.addEventListener('ended', () => {
+        video.currentTime = 0;
+        play();
+      });
+
+      video.addEventListener('timeupdate', () => {
+        if (video.duration > 0 && video.currentTime >= video.duration - 0.12) {
+          video.currentTime = 0;
+          play();
+        }
+      });
+
+      if ('IntersectionObserver' in window && section) {
+        let isVisible = true;
+        const observer = new IntersectionObserver(([entry]) => {
+          isVisible = entry.isIntersecting;
+          if (isVisible) {
+            play();
+          } else {
+            video.pause();
+          }
+        }, { threshold: 0.05 });
+        observer.observe(section);
+
+        document.addEventListener('visibilitychange', () => {
+          if (document.hidden) {
+            video.pause();
+          } else if (isVisible) {
+            play();
+          }
+        });
+      }
+
+      // Before/After video sound control
+      const baVideo = document.getElementById('beforeAfterVideo');
+      const baBtn = document.getElementById('beforeAfterMuteBtn');
+      if (baVideo && baBtn) {
+        baVideo.muted = true;
+        baVideo.play().catch(() => {});
+        baBtn.addEventListener('click', () => {
+          baVideo.muted = !baVideo.muted;
+          baBtn.innerHTML = baVideo.muted ? '🔇 <span>Tap for Sound</span>' : '🔊 <span>Sound On</span>';
+          if (baVideo.paused) baVideo.play().catch(() => {});
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>
