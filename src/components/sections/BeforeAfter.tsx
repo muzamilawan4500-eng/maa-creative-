@@ -121,7 +121,7 @@ export default function BeforeAfter() {
             <div className="relative overflow-hidden bg-[#050505] h-[420px] sm:h-[480px] md:h-[520px] flex items-center justify-center p-3 sm:p-4 group">
               {/* Subtle ambient video backdrop reflection */}
               <video
-                src="/videos/cinematic-video-ad.mp4"
+                src="https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/2026-11-05-112636218.mp4"
                 aria-hidden="true"
                 muted
                 loop
@@ -140,12 +140,13 @@ export default function BeforeAfter() {
               >
                 <video
                   ref={videoRef}
-                  src="/videos/cinematic-video-ad.mp4"
+                  src="https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/2026-11-05-112636218.mp4"
                   autoPlay
                   muted
                   loop
                   playsInline
                   preload="auto"
+                  poster="https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/2026-11-05-112636218.jpg"
                   className="w-full h-full object-cover"
                 />
 
