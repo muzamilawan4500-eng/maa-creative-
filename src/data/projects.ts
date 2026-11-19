@@ -20,8 +20,8 @@ export const projects: Project[] = [
     result: 'Snow Storm Assembly Hook',
     challenge: 'Grabbing instant attention for apparel in crowded, fast-scrolling social feeds.',
     whatWeMade: 'Cinematic jacket assembly ad video in a dramatic snow storm with custom sound design.',
-    videoSrc: '/videos/jacket-assembly-snow-storm.mp4',
-    posterSrc: '/images/poster-clothing.svg',
+    videoSrc: 'https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Jacket_assembly_in_snow_storm_20261026023031.mp4',
+    posterSrc: 'https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Jacket_assembly_in_snow_storm_20261026023031.jpg',
   },
   {
     slug: 'ironpeak-fitness',
