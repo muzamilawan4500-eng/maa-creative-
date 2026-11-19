@@ -124,7 +124,7 @@ export default function BeforeAfter() {
             <div className="relative overflow-hidden bg-[#050505] h-[420px] sm:h-[480px] md:h-[520px] flex items-center justify-center p-3 sm:p-4 group">
               {/* Subtle ambient video backdrop reflection */}
               <video
-                src="https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Ice_wall_shatters_revealing_perfume_6536f0de.mp4"
+                src="https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/2026-11-05-112636218.mp4"
                 aria-hidden="true"
                 muted
                 loop
@@ -143,8 +143,8 @@ export default function BeforeAfter() {
               >
                 <video
                   ref={videoRef}
-                  src="https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Ice_wall_shatters_revealing_perfume_6536f0de.mp4"
-                  poster="https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Ice_wall_shatters_revealing_perfume_6536f0de.jpg"
+                  src="https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/2026-11-05-112636218.mp4"
+                  poster="https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/2026-11-05-112636218.jpg"
                   autoPlay
                   muted
                   loop
