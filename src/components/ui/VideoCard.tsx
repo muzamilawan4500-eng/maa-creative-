@@ -18,28 +18,45 @@ export default function VideoCard({ project, onClick }: VideoCardProps) {
   useEffect(() => {
     if (!isRealVideo) return
     const el = cardRef.current
-    if (!el) return
+    const video = videoRef.current
+    if (!el || !video) return
 
+    // Explicitly guarantee muted autoplay compliance across all browsers
+    video.muted = true
+    video.defaultMuted = true
+    video.loop = true
+    video.playsInline = true
+
+    const playSafe = () => {
+      const p = video.play()
+      if (p !== undefined) {
+        p.catch(() => {})
+      }
+    }
+
+    // Play only when visible on screen; pause when scrolled out of view
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (videoRef.current) {
-          if (entry.isIntersecting) {
-            videoRef.current.play().catch(() => {})
-          } else {
-            videoRef.current.pause()
-          }
+        if (entry.isIntersecting) {
+          playSafe()
+        } else {
+          video.pause()
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.15 }
     )
     observer.observe(el)
 
-    // Initial attempt to start autoplay immediately on load
-    if (videoRef.current) {
-      videoRef.current.play().catch(() => {})
+    const handleEnded = () => {
+      video.currentTime = 0
+      playSafe()
     }
+    video.addEventListener('ended', handleEnded)
 
-    return () => observer.disconnect()
+    return () => {
+      observer.disconnect()
+      video.removeEventListener('ended', handleEnded)
+    }
   }, [isRealVideo])
 
   const handleMouseEnter = () => {
@@ -49,9 +66,7 @@ export default function VideoCard({ project, onClick }: VideoCardProps) {
   }
 
   const handleMouseLeave = () => {
-    if (videoRef.current && isRealVideo) {
-      // Keep smooth looping
-    }
+    // Continue smooth looping when hovering away
   }
 
   const handleTap = (e: React.MouseEvent) => {
@@ -66,10 +81,11 @@ export default function VideoCard({ project, onClick }: VideoCardProps) {
   }
 
   const categoryBadges: Record<string, string> = {
+    Watches: 'bg-amber-950/80 text-amber-300 border-amber-800/50',
     Clothing: 'bg-purple-950/80 text-purple-300 border-purple-800/50',
     Gym: 'bg-blue-950/80 text-blue-300 border-blue-800/50',
     'E-commerce': 'bg-emerald-950/80 text-emerald-300 border-emerald-800/50',
-    Food: 'bg-amber-950/80 text-amber-300 border-amber-800/50',
+    Food: 'bg-orange-950/80 text-orange-300 border-orange-800/50',
     Perfume: 'bg-pink-950/80 text-pink-300 border-pink-800/50',
     'Real Estate': 'bg-yellow-950/80 text-yellow-300 border-yellow-800/50',
   }

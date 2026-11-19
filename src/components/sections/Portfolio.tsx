@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { projects, Category } from '@/data/projects'
 import PortfolioGrid from '@/components/ui/PortfolioGrid'
 
-const categories: Category[] = ['All', 'Clothing', 'Gym', 'E-commerce', 'Food', 'Perfume', 'Real Estate']
+const categories: Category[] = ['All', 'Watches', 'Perfume', 'Clothing', 'Gym', 'E-commerce', 'Food', 'Real Estate']
 
 export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState<Category>('All')
@@ -28,7 +28,7 @@ export default function Portfolio() {
               onClick={() => setActiveCategory(cat)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
                 activeCategory === cat
-                  ? 'bg-[#D4AF37] text-black'
+                  ? 'bg-[#D4AF37] text-black font-semibold shadow-[0_0_15px_rgba(212,175,55,0.35)]'
                   : 'border border-[#1F1F1F] text-[#6B7280] hover:border-[#D4AF37] hover:text-[#D4AF37]'
               }`}
             >

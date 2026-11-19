@@ -52,9 +52,13 @@ export default function CaseStudyPage({ params }: Props) {
         </div>
 
         <div className="mb-12 rounded-2xl overflow-hidden border border-[#1F1F1F] max-w-sm mx-auto" style={{ aspectRatio: '9/16' }}>
-          <video src={project.videoSrc} poster={project.posterSrc} controls playsInline loop className="w-full h-full object-cover">
-            Your browser does not support the video tag.
-          </video>
+          {project.videoSrc ? (
+            <video src={project.videoSrc} poster={project.posterSrc} controls playsInline loop className="w-full h-full object-cover">
+              Your browser does not support the video tag.
+            </video>
+          ) : (
+            <img src={project.posterSrc} alt={project.brand} className="w-full h-full object-cover" />
+          )}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">

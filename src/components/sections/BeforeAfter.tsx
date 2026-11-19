@@ -24,8 +24,11 @@ export default function BeforeAfter() {
       }
     }
 
-    // Always attempt initial play
-    playSafe()
+    if (isIntersecting) {
+      playSafe()
+    } else {
+      video.pause()
+    }
 
     const handleEnded = () => {
       video.currentTime = 0
@@ -37,7 +40,7 @@ export default function BeforeAfter() {
     return () => {
       video.removeEventListener('ended', handleEnded)
     }
-  }, [])
+  }, [isIntersecting])
 
   const toggleMute = (e: React.MouseEvent) => {
     e.stopPropagation()
@@ -121,7 +124,7 @@ export default function BeforeAfter() {
             <div className="relative overflow-hidden bg-[#050505] h-[420px] sm:h-[480px] md:h-[520px] flex items-center justify-center p-3 sm:p-4 group">
               {/* Subtle ambient video backdrop reflection */}
               <video
-                src="/videos/cinematic-video-ad.mp4"
+                src="https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Ice_wall_shatters_revealing_perfume_6536f0de.mp4"
                 aria-hidden="true"
                 muted
                 loop
@@ -140,7 +143,8 @@ export default function BeforeAfter() {
               >
                 <video
                   ref={videoRef}
-                  src="/videos/cinematic-video-ad.mp4"
+                  src="https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Ice_wall_shatters_revealing_perfume_6536f0de.mp4"
+                  poster="https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Ice_wall_shatters_revealing_perfume_6536f0de.jpg"
                   autoPlay
                   muted
                   loop

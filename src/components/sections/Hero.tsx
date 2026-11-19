@@ -89,21 +89,21 @@ export default function Hero() {
       {/* Background Video with Clean Dark Overlay */}
       <video
         ref={videoRef}
-        src="/videos/hero-showreel.mp4"
+        src="https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Luxury_watch_film_creation_1080p_20261024031446.mp4"
         className="absolute inset-0 w-full h-full object-cover pointer-events-none will-change-transform"
         autoPlay
         muted
         loop
         playsInline
         preload="auto"
-        poster="/images/hero-poster.svg"
+        poster="https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Luxury_watch_film_creation_1080p_20261024031446.jpg"
         onEnded={(e) => {
           const v = e.currentTarget
           v.currentTime = 0
           v.play().catch(() => {})
         }}
       >
-        <source src="/videos/hero-showreel.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Luxury_watch_film_creation_1080p_20261024031446.mp4" type="video/mp4" />
       </video>
 
       {/* Atmospheric vignette to guarantee pristine text contrast */}
@@ -160,7 +160,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
         >
-          High-impact ad videos built for Clothing, Gym Accessories, Shopify &amp; E-commerce, Restaurants, Perfume, and Real Estate. We engineer videos that turn scrollers into buyers.
+          High-impact ad videos built for Luxury Timepieces, Fragrances, Clothing, Gym Accessories, Shopify &amp; E-commerce, Restaurants, and Real Estate. We engineer videos that turn scrollers into buyers.
         </motion.p>
 
         {/* Action Buttons */}

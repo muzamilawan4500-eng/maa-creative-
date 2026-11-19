@@ -16,7 +16,9 @@ export default function Lightbox({ project, onClose }: LightboxProps) {
     if (project) {
       document.body.style.overflow = 'hidden'
       setTimeout(() => closeRef.current?.focus(), 100)
-      videoRef.current?.play().catch(() => {})
+      if (project.videoSrc) {
+        videoRef.current?.play().catch(() => {})
+      }
     }
     return () => { document.body.style.overflow = '' }
   }, [project])
@@ -48,15 +50,23 @@ export default function Lightbox({ project, onClose }: LightboxProps) {
             exit={{ scale: 0.8, opacity: 0 }}
             onClick={(e) => e.stopPropagation()}
           >
-            <video
-              ref={videoRef}
-              src={project.videoSrc}
-              poster={project.posterSrc}
-              controls
-              playsInline
-              loop
-              className="w-full h-full object-cover rounded-xl"
-            />
+            {project.videoSrc ? (
+              <video
+                ref={videoRef}
+                src={project.videoSrc}
+                poster={project.posterSrc}
+                controls
+                playsInline
+                loop
+                className="w-full h-full object-cover rounded-xl"
+              />
+            ) : (
+              <img
+                src={project.posterSrc}
+                alt={project.brand}
+                className="w-full h-full object-cover rounded-xl"
+              />
+            )}
             <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent rounded-b-xl">
               <h3 className="text-white font-playfair font-bold">{project.brand}</h3>
               <p className="text-[#D4AF37] text-xs sm:text-sm font-semibold flex items-center gap-1.5 mt-0.5">

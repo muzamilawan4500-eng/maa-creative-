@@ -1,4 +1,4 @@
-export type Category = 'All' | 'Clothing' | 'Gym' | 'E-commerce' | 'Food' | 'Perfume' | 'Real Estate'
+export type Category = 'All' | 'Watches' | 'Perfume' | 'Clothing' | 'Gym' | 'E-commerce' | 'Food' | 'Real Estate'
 
 export interface Project {
   slug: string
@@ -14,13 +14,33 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    slug: 'luxury-watches',
+    brand: 'Luxury Timepieces & Watches',
+    category: 'Watches',
+    result: 'Cinematic 4K Precision Showcase',
+    challenge: 'Conveying micro-mechanical craftsmanship and horological luxury on fast-scrolling mobile feeds.',
+    whatWeMade: 'Macro-lens luxury timepiece film engineered with dynamic lighting and prestige sound design.',
+    videoSrc: 'https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Luxury_watch_film_creation_1080p_20261024031446.mp4',
+    posterSrc: 'https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Luxury_watch_film_creation_1080p_20261024031446.jpg',
+  },
+  {
+    slug: 'lumiere-parfums',
+    brand: 'Luxury Fragrance & Beauty',
+    category: 'Perfume',
+    result: 'Ice Wall Shatter Reveal',
+    challenge: 'Translating invisible scent notes into a visual feeling of desire and prestige.',
+    whatWeMade: 'Dramatic cinematic reveal ad featuring an ice wall shatter effect with custom sound design.',
+    videoSrc: 'https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Ice_wall_shatters_revealing_perfume_6536f0de.mp4',
+    posterSrc: 'https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Ice_wall_shatters_revealing_perfume_6536f0de.jpg',
+  },
+  {
     slug: 'urban-threads',
     brand: 'Streetwear & Outerwear',
     category: 'Clothing',
     result: 'Snow Storm Assembly Hook',
     challenge: 'Grabbing instant attention for apparel in crowded, fast-scrolling social feeds.',
     whatWeMade: 'Cinematic jacket assembly ad video in a dramatic snow storm with custom sound design.',
-    videoSrc: '/videos/jacket-assembly-snow-storm.mp4',
+    videoSrc: '',
     posterSrc: '/images/poster-clothing.svg',
   },
   {
@@ -30,7 +50,7 @@ export const projects: Project[] = [
     result: 'High-Energy Pacing & Beats',
     challenge: 'Standard workout clips failing to convey product durability and workout intensity.',
     whatWeMade: 'Dynamic rhythm-cut showcase featuring athlete motion, heavy beats, and bold typography.',
-    videoSrc: '/videos/placeholder.mp4',
+    videoSrc: '',
     posterSrc: '/images/poster-gym.svg',
   },
   {
@@ -40,18 +60,8 @@ export const projects: Project[] = [
     result: 'Appetite Appeal & Slow-Mo',
     challenge: 'Static menu photos failing to drive emotional cravings on TikTok & Instagram.',
     whatWeMade: 'Sensory macro food reel concept engineered with sizzle audio and appetite-driven color grading.',
-    videoSrc: '/videos/placeholder.mp4',
+    videoSrc: '',
     posterSrc: '/images/poster-food.svg',
-  },
-  {
-    slug: 'lumiere-parfums',
-    brand: 'Luxury Fragrance & Beauty',
-    category: 'Perfume',
-    result: 'Sensory Luxury Aesthetic',
-    challenge: 'Translating invisible scent notes into a visual feeling of desire and prestige.',
-    whatWeMade: 'Sensory visual ad concept evoking elegance, light reflections, and high-fashion pacing.',
-    videoSrc: '/videos/placeholder.mp4',
-    posterSrc: '/images/poster-perfume.svg',
   },
   {
     slug: 'vertex-commerce',
@@ -60,7 +70,7 @@ export const projects: Project[] = [
     result: 'Direct-Response Feature Demo',
     challenge: 'Product images failing to demonstrate real-world utility and problem-solving value.',
     whatWeMade: 'Short-form product demo concept with dynamic benefit callouts and clear CTA.',
-    videoSrc: '/videos/placeholder.mp4',
+    videoSrc: '',
     posterSrc: '/images/poster-ecommerce.svg',
   },
   {
@@ -70,7 +80,7 @@ export const projects: Project[] = [
     result: 'Smooth Cinematic Walkthrough',
     challenge: 'Flat listing photos failing to convey scale, light, and luxury atmosphere.',
     whatWeMade: 'Cinematic walkthrough highlight concept designed to capture high-intent property inquiries.',
-    videoSrc: '/videos/placeholder.mp4',
+    videoSrc: '',
     posterSrc: '/images/poster-realestate.svg',
   },
 ]
