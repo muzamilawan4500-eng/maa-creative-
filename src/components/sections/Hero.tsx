@@ -89,26 +89,26 @@ export default function Hero() {
       {/* Background Video with Clean Dark Overlay */}
       <video
         ref={videoRef}
-        src="/videos/hero-showreel.mp4"
+        src="https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Luxury_watch_film_creation_1080p_20261024031446.mp4"
         className="absolute inset-0 w-full h-full object-cover pointer-events-none will-change-transform"
         autoPlay
         muted
         loop
         playsInline
         preload="auto"
-        poster="/images/hero-poster.svg"
+        poster="https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Luxury_watch_film_creation_1080p_20261024031446.jpg"
         onEnded={(e) => {
           const v = e.currentTarget
           v.currentTime = 0
           v.play().catch(() => {})
         }}
       >
-        <source src="/videos/hero-showreel.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Luxury_watch_film_creation_1080p_20261024031446.mp4" type="video/mp4" />
       </video>
 
       {/* Atmospheric vignette to guarantee pristine text contrast */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/90 via-[#0A0A0A]/75 to-[#0A0A0A]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-[#0A0A0A]/60 to-[#0A0A0A]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/70 via-[#0A0A0A]/45 to-[#0A0A0A]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-[#0A0A0A]/35 to-[#0A0A0A]" />
 
       <div className="relative z-10 text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Floating pill badge */}
