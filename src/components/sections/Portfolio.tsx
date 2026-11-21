@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { projects, Category } from '@/data/projects'
 import PortfolioGrid from '@/components/ui/PortfolioGrid'
 
-const categories: Category[] = ['All', 'Watches', 'Perfume', 'Clothing', 'Gym', 'E-commerce', 'Food', 'Real Estate']
+const categories: Category[] = ['All', 'GTA 6', 'Watches', 'Perfume', 'Clothing', 'Gym', 'E-commerce', 'Food', 'Real Estate']
 
 export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState<Category>('All')
@@ -17,7 +17,7 @@ export default function Portfolio() {
           <p className="text-[#D4AF37] text-sm font-semibold uppercase tracking-widest mb-3">Portfolio</p>
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white">Our Work</h2>
           <p className="text-[#9CA3AF] mt-4 max-w-xl mx-auto text-sm sm:text-base">
-            Commercial video concepts and ad showcases engineered to stop the scroll and drive action.
+            Commercial video concepts, gaming showcases, and ad reels engineered to stop the scroll and drive action.
           </p>
         </div>
 

@@ -1,4 +1,4 @@
-export type Category = 'All' | 'Watches' | 'Perfume' | 'Clothing' | 'Gym' | 'E-commerce' | 'Food' | 'Real Estate'
+export type Category = 'All' | 'GTA 6' | 'Watches' | 'Perfume' | 'Clothing' | 'Gym' | 'E-commerce' | 'Food' | 'Real Estate'
 
 export interface Project {
   slug: string
@@ -13,6 +13,16 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    slug: 'gta-6-creativity',
+    brand: 'GTA 6 Creativity & Gaming Reel',
+    category: 'GTA 6',
+    result: 'Next-Gen Cinematic Motion Hook',
+    challenge: 'Capturing hyper-immersive open-world action and viral social energy for next-generation gaming audiences.',
+    whatWeMade: 'Dynamic high-octane GTA 6 cinematic showcase engineered with rhythm cuts, cinematic camera sweeps, and immersive soundscapes.',
+    videoSrc: 'https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Untitled_Scene_11-20_17_04_24_20261120091524.mp4',
+    posterSrc: 'https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Untitled_Scene_11-20_17_04_24_20261120091524.jpg',
+  },
   {
     slug: 'luxury-watches',
     brand: 'Luxury Timepieces & Watches',

@@ -81,6 +81,7 @@ export default function VideoCard({ project, onClick }: VideoCardProps) {
   }
 
   const categoryBadges: Record<string, string> = {
+    'GTA 6': 'bg-fuchsia-950/80 text-fuchsia-300 border-fuchsia-800/50',
     Watches: 'bg-amber-950/80 text-amber-300 border-amber-800/50',
     Clothing: 'bg-purple-950/80 text-purple-300 border-purple-800/50',
     Gym: 'bg-blue-950/80 text-blue-300 border-blue-800/50',

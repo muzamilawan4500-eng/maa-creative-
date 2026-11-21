@@ -2,6 +2,7 @@ import Hero from '@/components/sections/Hero'
 import TrustStrip from '@/components/sections/TrustStrip'
 import BeforeAfter from '@/components/sections/BeforeAfter'
 import Portfolio from '@/components/sections/Portfolio'
+import GtaShowcase from '@/components/sections/GtaShowcase'
 import Services from '@/components/sections/Services'
 import HowItWorks from '@/components/sections/HowItWorks'
 import Packages from '@/components/sections/Packages'
@@ -17,6 +18,7 @@ export default function HomePage() {
       <TrustStrip />
       <BeforeAfter />
       <Portfolio />
+      <GtaShowcase />
       <Services />
       <HowItWorks />
       <Packages />
