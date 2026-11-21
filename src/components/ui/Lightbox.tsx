@@ -20,14 +20,20 @@ export default function Lightbox({ project, onClose }: LightboxProps) {
         videoRef.current?.play().catch(() => {})
       }
     }
-    return () => { document.body.style.overflow = '' }
+    return () => {
+      document.body.style.overflow = ''
+    }
   }, [project])
 
   useEffect(() => {
-    const handleKey = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose() }
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose()
+    }
     window.addEventListener('keydown', handleKey)
     return () => window.removeEventListener('keydown', handleKey)
   }, [onClose])
+
+  const isWide = project?.aspectRatio === '16/9'
 
   return (
     <AnimatePresence>
@@ -43,8 +49,8 @@ export default function Lightbox({ project, onClose }: LightboxProps) {
           aria-label={`${project.brand} video`}
         >
           <motion.div
-            className="relative w-full max-w-sm"
-            style={{ aspectRatio: '9/16', maxHeight: '90vh' }}
+            className={`relative w-full ${isWide ? 'max-w-4xl aspect-video' : 'max-w-sm aspect-[9/16]'}`}
+            style={{ maxHeight: '90vh' }}
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.8, opacity: 0 }}
@@ -58,16 +64,16 @@ export default function Lightbox({ project, onClose }: LightboxProps) {
                 controls
                 playsInline
                 loop
-                className="w-full h-full object-cover rounded-xl"
+                className="w-full h-full object-contain bg-black rounded-xl"
               />
             ) : (
               <img
                 src={project.posterSrc}
                 alt={project.brand}
-                className="w-full h-full object-cover rounded-xl"
+                className="w-full h-full object-contain bg-black rounded-xl"
               />
             )}
-            <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent rounded-b-xl">
+            <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-black/80 to-transparent rounded-b-xl pointer-events-none">
               <h3 className="text-white font-playfair font-bold">{project.brand}</h3>
               <p className="text-[#D4AF37] text-xs sm:text-sm font-semibold flex items-center gap-1.5 mt-0.5">
                 <span>🎬</span> {project.result}

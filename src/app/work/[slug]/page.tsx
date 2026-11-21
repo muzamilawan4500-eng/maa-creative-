@@ -8,11 +8,11 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  return projects.map(p => ({ slug: p.slug }))
+  return projects.map((p) => ({ slug: p.slug }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const project = projects.find(p => p.slug === params.slug)
+  const project = projects.find((p) => p.slug === params.slug)
   if (!project) return {}
   return {
     title: `${project.brand} — Creative Breakdown | MAA Creative Studio`,
@@ -26,8 +26,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default function CaseStudyPage({ params }: Props) {
-  const project = projects.find(p => p.slug === params.slug)
+  const project = projects.find((p) => p.slug === params.slug)
   if (!project) notFound()
+
+  const isWide = project.aspectRatio === '16/9'
 
   return (
     <main className="min-h-screen pt-24 pb-16">
@@ -51,13 +53,24 @@ export default function CaseStudyPage({ params }: Props) {
           </div>
         </div>
 
-        <div className="mb-12 rounded-2xl overflow-hidden border border-[#1F1F1F] max-w-sm mx-auto" style={{ aspectRatio: '9/16' }}>
+        <div
+          className={`mb-12 rounded-2xl overflow-hidden border border-[#1F1F1F] mx-auto ${
+            isWide ? 'max-w-4xl aspect-video' : 'max-w-sm aspect-[9/16]'
+          }`}
+        >
           {project.videoSrc ? (
-            <video src={project.videoSrc} poster={project.posterSrc} controls playsInline loop className="w-full h-full object-cover">
+            <video
+              src={project.videoSrc}
+              poster={project.posterSrc}
+              controls
+              playsInline
+              loop
+              className="w-full h-full object-contain bg-black"
+            >
               Your browser does not support the video tag.
             </video>
           ) : (
-            <img src={project.posterSrc} alt={project.brand} className="w-full h-full object-cover" />
+            <img src={project.posterSrc} alt={project.brand} className="w-full h-full object-contain bg-black" />
           )}
         </div>
 

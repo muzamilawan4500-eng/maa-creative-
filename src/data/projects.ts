@@ -10,6 +10,7 @@ export interface Project {
   videoSrc: string
   posterSrc: string
   galleryVideos?: string[]
+  aspectRatio?: '16/9' | '9/16'
 }
 
 export const projects: Project[] = [
@@ -17,11 +18,12 @@ export const projects: Project[] = [
     slug: 'gta-6-creativity',
     brand: 'GTA 6 Creativity & Gaming Reel',
     category: 'GTA 6',
-    result: 'Next-Gen Cinematic Motion Hook',
+    result: '16:9 Cinematic Next-Gen Showcase',
     challenge: 'Capturing hyper-immersive open-world action and viral social energy for next-generation gaming audiences.',
-    whatWeMade: 'Dynamic high-octane GTA 6 cinematic showcase engineered with rhythm cuts, cinematic camera sweeps, and immersive soundscapes.',
+    whatWeMade: 'Dynamic high-octane GTA 6 cinematic showcase engineered in 16:9 widescreen with rhythm cuts, sweeping camera moves, and immersive soundscapes.',
     videoSrc: 'https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Untitled_Scene_11-20_17_04_24_20261120091524.mp4',
     posterSrc: 'https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Untitled_Scene_11-20_17_04_24_20261120091524.jpg',
+    aspectRatio: '16/9',
   },
   {
     slug: 'luxury-watches',
@@ -32,6 +34,7 @@ export const projects: Project[] = [
     whatWeMade: 'Macro-lens luxury timepiece film engineered with dynamic lighting and prestige sound design.',
     videoSrc: 'https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Luxury_watch_film_creation_1080p_20261024031446.mp4',
     posterSrc: 'https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Luxury_watch_film_creation_1080p_20261024031446.jpg',
+    aspectRatio: '9/16',
   },
   {
     slug: 'lumiere-parfums',
@@ -42,6 +45,7 @@ export const projects: Project[] = [
     whatWeMade: 'Dramatic cinematic reveal ad featuring an ice wall shatter effect with custom sound design.',
     videoSrc: 'https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Ice_wall_shatters_revealing_perfume_6536f0de.mp4',
     posterSrc: 'https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Ice_wall_shatters_revealing_perfume_6536f0de.jpg',
+    aspectRatio: '9/16',
   },
   {
     slug: 'urban-threads',
@@ -52,6 +56,7 @@ export const projects: Project[] = [
     whatWeMade: 'Cinematic jacket assembly ad video in a dramatic snow storm with custom sound design.',
     videoSrc: 'https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Jacket_assembly_in_snow_storm_20261026023031.mp4',
     posterSrc: 'https://res.cloudinary.com/bn8grosa/video/upload/q_auto,f_auto/Jacket_assembly_in_snow_storm_20261026023031.jpg',
+    aspectRatio: '9/16',
   },
   {
     slug: 'ironpeak-fitness',
@@ -62,6 +67,7 @@ export const projects: Project[] = [
     whatWeMade: 'Dynamic rhythm-cut showcase featuring athlete motion, heavy beats, and bold typography.',
     videoSrc: '',
     posterSrc: '/images/poster-gym.svg',
+    aspectRatio: '9/16',
   },
   {
     slug: 'saveur-cafe',
@@ -72,6 +78,7 @@ export const projects: Project[] = [
     whatWeMade: 'Sensory macro food reel concept engineered with sizzle audio and appetite-driven color grading.',
     videoSrc: '',
     posterSrc: '/images/poster-food.svg',
+    aspectRatio: '9/16',
   },
   {
     slug: 'vertex-commerce',
@@ -82,6 +89,7 @@ export const projects: Project[] = [
     whatWeMade: 'Short-form product demo concept with dynamic benefit callouts and clear CTA.',
     videoSrc: '',
     posterSrc: '/images/poster-ecommerce.svg',
+    aspectRatio: '9/16',
   },
   {
     slug: 'golden-key-realty',
@@ -92,5 +100,6 @@ export const projects: Project[] = [
     whatWeMade: 'Cinematic walkthrough highlight concept designed to capture high-intent property inquiries.',
     videoSrc: '',
     posterSrc: '/images/poster-realestate.svg',
+    aspectRatio: '9/16',
   },
 ]

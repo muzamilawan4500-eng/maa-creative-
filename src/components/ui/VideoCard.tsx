@@ -91,10 +91,14 @@ export default function VideoCard({ project, onClick }: VideoCardProps) {
     'Real Estate': 'bg-yellow-950/80 text-yellow-300 border-yellow-800/50',
   }
 
+  const isWide = project.aspectRatio === '16/9'
+
   return (
     <div
       ref={cardRef}
-      className="relative group cursor-pointer rounded-2xl overflow-hidden bg-[#0d0d0d] border border-[#222222] hover:border-[#D4AF37] transition-all duration-300 hover:shadow-[0_0_28px_rgba(212,175,55,0.22)]"
+      className={`relative group cursor-pointer rounded-2xl overflow-hidden bg-[#0d0d0d] border ${
+        isWide ? 'border-fuchsia-500/40 hover:border-fuchsia-400' : 'border-[#222222] hover:border-[#D4AF37]'
+      } transition-all duration-300 hover:shadow-[0_0_28px_rgba(212,175,55,0.22)]`}
       style={{ aspectRatio: '9/16' }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -118,14 +122,18 @@ export default function VideoCard({ project, onClick }: VideoCardProps) {
           onPlay={() => setIsPlaying(true)}
           onPause={() => setIsPlaying(false)}
           onError={() => setHasError(true)}
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className={`absolute inset-0 w-full h-full ${
+            isWide ? 'object-contain bg-black' : 'object-cover'
+          } transition-transform duration-500 group-hover:scale-105`}
           onClick={handleTap}
         />
       ) : (
         <img
           src={project.posterSrc}
           alt={project.brand}
-          className="absolute inset-0 w-full h-full object-cover"
+          className={`absolute inset-0 w-full h-full ${
+            isWide ? 'object-contain bg-black' : 'object-cover'
+          }`}
         />
       )}
 
